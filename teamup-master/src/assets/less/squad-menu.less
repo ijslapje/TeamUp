@@ -1,0 +1,195 @@
+.squad-menu{
+    padding: 20px 0px;
+    text-align: left;
+    background-color: @first-color;
+    width: 100%;
+    h4{
+        margin: 0px;
+    }
+    .squad-menu-title{
+        text-align: left;
+    }
+    
+    h4{
+        color: @second-color;
+    }
+}
+
+.squad-sub-menu{
+    padding: 20px 0px;
+    text-align: left;
+    background-color: @second-color;
+    border-top: 1px solid @fourth-color;
+    width: 100%;
+    .squad-menu-list{
+        font-family: @first-font;
+        font-weight: 400;
+        padding: 0px;
+        margin: 0px;
+        li{
+            color: @first-color;
+            list-style: none;
+            display: inline-block;
+            float: left;
+            &:last-child{
+                &:after{
+                    content: "";
+                    padding: 0px;
+                    color: @first-color;
+                }
+            }
+            &:after{
+                content: "|";
+                position: relative;
+                font-weight: bold;
+                color: @first-color;
+                padding: 0px 10px;
+            }
+            a{
+                color: @white-color;
+                &.router-link-active{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+#squadprofile{
+    width: 100%;
+    .squadhome-img-wrapper{
+      position: relative;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+      .cogwheel{
+        width: 50px;
+        height: 50px;
+        background: @first-color;
+        text-align: center;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 300;
+        bottom: 20px;
+        right: 20px;
+        // transform: translateY(50%);
+        i{
+          line-height: 50px;
+        }
+      }
+    }
+    .upcoming{
+
+        .upcoming-text{
+            background-color: @third-color;
+            padding: 15px 0px;
+            margin: 0px;
+            p{
+                font-family: @first-font;
+                font-weight: bold;
+                font-style: italic;
+                text-transform: uppercase;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+        }
+        .upcoming-training{
+            display: block;
+            padding: 30px 0px;
+            position: relative;
+            border-bottom: 1px solid @fifth-color;
+            width: 100%;
+            &:last-of-type{
+                border-bottom: none;
+            }
+            .upcoming-height-fix{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            p{
+                width: 100%;
+                min-width: 100%;
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                &:first-letter{
+                    text-transform: capitalize;
+                }
+            }
+            i{
+                color: @white-color;
+            }
+        }
+        .members{
+            padding: 15px 0px;
+            p{
+                padding: 0px;
+                margin: 0px;
+                font-family: @first-font;
+                font-weight: bold;
+                font-style: italic;
+                text-transform: uppercase;
+                color: @white-color;
+            }
+
+        }
+        .users{
+            float: left;
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding: 20px 0px;
+            .user{
+                width: 15%;
+                margin-right: 15px;
+                display: inline-block;
+                &:last-child{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+.squadhome {
+    // span {
+    //     /*color: #fff;*/
+    //     padding-left: 12.5px;
+    //     padding-right: 12.5px;
+    // }
+
+    .members {
+        width: 100%;
+        text-align: left;
+
+        /*horizontal scrollbar hide*/
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .users{
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        .user{
+            display: inline-block;
+            color: white;
+            border-radius: 100%;
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+    .members::-webkit-scrollbar {
+        display: none;
+    }
+}

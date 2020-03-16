@@ -1,0 +1,77 @@
+.btn {
+  position: relative;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border: 1px solid #ffef40;
+  padding: 10px 30px;
+  line-height: auto;
+  text-align: center;
+  transition: 0.8s;
+}
+.btn:before {
+  content: '';
+  background: #ffef40;
+  position: absolute;
+  width: 0%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+.btn:hover {
+  border: 1px solid #ffef40;
+  background: transparent;
+  color: #1a1a1a;
+  transition: 0.8s;
+}
+.btn:hover:before {
+  width: 100%;
+}
+.btn.btn-icon {
+  padding: 10px 20px 10px 15px;
+  text-align: right;
+}
+.btn.btn-icon:hover:after {
+  transition: 0.8s;
+  background: #1a1a1a;
+}
+.btn.btn-icon:after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 1px;
+  background: #ffef40;
+  top: 0px;
+  height: 100%;
+}
+.btn.btn-icon i {
+  height: 100%;
+  line-height: inherit;
+  font-size: 0.75rem;
+  padding-left: 5px;
+  padding-right: 35px;
+  text-align: left;
+  float: left;
+}
+.btn.btn-modal {
+  color: #ffffff;
+}
+.btn.btn-modal:hover {
+  background: #ffef40;
+  color: #1a1a1a;
+}
+.btn.btn-submit {
+  color: #4b4b4b;
+  background: #ffef40;
+}
+.btn.btn-submit:hover {
+  color: #181818;
+  background: #d9c700;
+}

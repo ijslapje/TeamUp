@@ -1,0 +1,81 @@
+@import "variabless.less"; 	 
+
+.btn{
+	position:relative;
+	background: transparent;
+	color: @white-color;
+	font-family: @first-font;
+	font-size: 12/16rem;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	border-radius: 0px;
+	border: 1px solid @first-color;
+	padding: 10px 30px;
+	line-height: auto;
+	text-align: center;
+	transition: 0.8s;
+	&:before{
+		content:'';
+	    background: @first-color;
+	    position:absolute;
+	    width:0%;
+	    top:0;
+	    left:0;
+	    height:100%;
+	    z-index:-1;
+	    transition: 0.3s linear;
+	}
+	&:hover{
+		border: 1px solid @first-color;
+		background: transparent;
+		color: @second-color;
+		transition: 0.8s;
+		&:before{
+			width:100%;
+		}
+	}
+	&.btn-icon{
+		padding: 10px 20px 10px 15px;
+		text-align: right;
+		&:hover{
+			&:after{
+				transition: 0.8s;
+				background: @second-color;
+			}
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			left: 50px;
+			width: 1px;
+			background: @first-color;
+			top: 0px;
+			height: 100%;
+		}
+		i{
+			height: 100%;
+			line-height: inherit;
+			font-size: 12/16rem;
+			padding-left: 5px;
+			padding-right: 35px;
+			text-align: left;
+			float: left;
+		}
+	}
+	&.btn-modal{
+		color: @white-color;
+		&:hover{
+			background: @first-color;
+			color: @second-color;
+		}
+	}
+	&.btn-submit{
+		color: @fourth-color;
+		background: @first-color;
+		&:hover{
+			color:  darken(@fourth-color, 20%);
+			background: darken(@first-color, 20%);
+		}
+	}
+}

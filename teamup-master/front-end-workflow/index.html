@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <!-- BASIC META TAGS -->
+    <meta charset="utf-8">
+    <title>Basic SCSS</title>
+    <meta name="description" content="Basic SCSS tutorial by Cas Bukkems">
+    <meta name="keywords" content="">
+    <meta name="author" content="Cas Bukkems">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="HandheldFriendly" content="true" />
+    
+    <!-- LOAD IN FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <!-- LOAD IN STYLING -->
+    <link rel="stylesheet" href="assets/default/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/default/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <body>
+        <section id="font_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <h1>H1 text</h1>
+                        <h1>H1 <span class="dash">|</span> text with dash</h1>
+                        <h2>H2 text</h2>
+                        <h3>H3 text</h3>
+                        <h4>H4 text</h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit augue, bibendum tincidunt vulputate nec, vestibulum in libero. Sed quis eros erat. Suspendisse luctus lobortis tempor. Sed congue a justo sed laoreet. Nullam augue lacus, ullamcorper non neque id, interdum eleifend nibh. Nam feugiat, dui ac pretium venenatis, libero ante porttitor arcu, sed pellentesque nisl urna sit amet nisl. Maecenas efficitur, arcu eget lobortis egestas, felis libero viverra orci, eget ullamcorper velit purus bibendum ipsum. Nunc ut aliquam lectus, ac porta est. Donec sed risus auctor, convallis magna sit amet, feugiat ante. Praesent vulputate tortor augue, non imperdiet nisi vehicula et. Nam malesuada elementum sodales. Pellentesque semper, nisl sed elementum fermentum, nisi mauris bibendum eros, vel tincidunt dui justo vel neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="btn_section">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-2">
+                        <a class="btn" href="#">
+                            Button 1 <span class="badge badge-light">4</span>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="btn btn-icon" href="#">
+                            <i class="fas fa-cog"></i></i>Button 2
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <span class="badge badge-light">4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modal_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <button class="btn" href="#" data-toggle="modal" data-target="#exampleModal">
+                            Open modal
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit augue, bibendum tincidunt vulputate nec, vestibulum in libero. Sed quis eros erat. Suspendisse luctus lobortis tempor.
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-submit"  href="#" data-dismiss="modal">Option 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="input_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">@</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-submit mb-2">Submit</button>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                        <label class="form-check-label" for="autoSizingCheck">
+                                        Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="input_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Example select</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div id="tabs">
+                         <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link" href="#tabs-1">Tab 1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tabs-2">Tab 2</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tabs-3">Tab 3</a></li>
+                         </ul>
+                         <div id="tabs-1">
+                            <p>
+                               Neque porro quisquam est qui dolorem ipsum quia dolor sit 
+                               amet, consectetur, adipisci velit... 
+                            </p>
+                         </div>
+                         <div id="tabs-2">
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                               nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                         </div>
+                         <div id="tabs-3">
+                            <p>
+                               ed ut perspiciatis unde omnis iste natus error sit 
+                               voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                               eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                               beatae vitae dicta sunt explicabo.
+                            </p>    
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                               nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                         </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="breadcrumb_section">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="badge_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                        <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+                        <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                        <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                        <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                        <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                        <span class="badge badge-primary">Primary</span>
+                        <span class="badge badge-secondary">Secondary</span>
+                        <span class="badge badge-success">Success</span>
+                        <span class="badge badge-danger">Danger</span>
+                        <span class="badge badge-warning">Warning</span>
+                        <span class="badge badge-info">Info</span>
+                        <span class="badge badge-light">Light</span>
+                        <span class="badge badge-dark">Dark</span>
+                        <button type="button" class="btn btn-submit">
+                            Profile <span class="badge badge-light">9</span>
+                            <span class="sr-only">unread messages</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="assets/default/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/default/js/default.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+#team_overview{
+    padding-top: 20px;
+    .overview-card{
+        border-radius: 0px;
+        .card{
+            border-radius: 0px;
+            border: 0px;
+            background-color: lighten(@third-color, 5%);
+            .card-img{
+                height: 200px;
+                width: 100%;
+                border-radius: 0px;
+                background-size: cover;
+                background-position: center center;
+            }
+            .card-body{
+                position: relative;
+                max-width: 100%;
+
+                .card-text{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2; /* number of lines to show */
+                    &.description{
+                        margin-bottom: 35px;
+                    }
+                }
+                .dash{
+
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+    .add_squad_section{
+        margin: 30px 0px;
+    }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+
+    background-color: @first-color;
+}
+
+.edit_squad{
+    .form-control{
+        margin-bottom: 0px;
+    }
+}
+
+.wrap-img{
+    height: 200px;
+    width: 100%;
+    border-radius: 0px;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.badge{
+    background: @first-color;
+    color: @second-color;
+    font-weight: 700;
+    font-style: italic;
+    font-family: @first-font;
+    padding: 7px 14px;
+    &:first-child{
+        content: "";
+        position: relative;
+        margin-left: 0px !important;
+    }
+}
+
+.tagg{
+    padding: 10px 0px;
+    display:inline-block;
+}
